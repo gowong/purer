@@ -138,7 +138,7 @@ prompt_pure_preprompt_render() {
 	# begin with symbol, colored by previous command exit code
 	preprompt+="%F{$symbol_color}${PURE_PROMPT_SYMBOL:-❯}%f "
 	# directory, colored by vim status
-	preprompt+="%B%F{$STATUS_COLOR}%c%f%b"
+	preprompt+="%B%F{$STATUS_COLOR}%~%f%b"
 	# git info
 	preprompt+="%F{$git_color}${vcs_info_msg_0_}${prompt_pure_git_dirty}%f"
 	# git pull/push arrows
